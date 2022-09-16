@@ -1,24 +1,22 @@
+import'./styles/man.css'
+
+import logoImg from './assets/logo-nlw-esports.png'
 
 interface ButtonProps {
   title: string;
 }
 
-function Button(props: ButtonProps){
-  return (
-  <button>
-    {props.title}
-  </button>
-  )
-}
 
 function App() {
-
   return (
-    <div>
-      <Button title="send 1"/>
-      <Button title="send 2"/>
-      <Button title="send 3"/>
-    </div>
+   <div className="max-w-[1344] mx-auto flex flex-col items-center my-20">
+    <img src={logoImg} alt="Logo" />
+
+    <h1 className='text-6xl text-white font-black mt-20'>
+      Seu <span className="bg-nlw-gradient">dou</span> Está aqui
+    </h1>
+
+   </div>
   )
 }
 
